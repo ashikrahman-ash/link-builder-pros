@@ -338,6 +338,7 @@ footer .copy-right ul li a:hover { color: var(--primary); }
 .golden-elements-card { -webkit-box-shadow: 0px 15px 40px 0px rgba(30, 33, 45, 0.09); box-shadow: 0px 15px 40px 0px rgba(30, 33, 45, 0.09); border-radius: 12px; padding: 30px; }
 
 .services-users { background: url("../img/posting-service-section-bg.svg"); background-repeat: no-repeat; background-position: top center; background-size: contain; }
+.services-users.niche-edits { background: none !important; }
 .services-users .services-users-dubble-btn { gap: 30px; }
 .services-users .services-users-section-img { margin-left: -20px; margin-right: -20px; }
 .services-users .row { padding-bottom: 110px; }

@@ -1410,6 +1410,9 @@ footer {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  &.niche-edits {
+    background: none !important;
+  }
 
   .services-users-dubble-btn {
     gap: 30px;
