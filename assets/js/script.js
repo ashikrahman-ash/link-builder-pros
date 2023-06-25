@@ -125,7 +125,3 @@ const swiper2 = new Swiper(".newsupdate-slider", {
 });
 
 // Swipper js end
-
-
-
-
