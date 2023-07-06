@@ -310,6 +310,10 @@ header {
   font-size: 30px;
   line-height: 40px;
 
+  @media (max-width: 992px) {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
   @media (max-width: 575px) {
     font-size: 20px !important;
     line-height: 30px !important;
@@ -1816,6 +1820,7 @@ footer {
 
   .services-users-dubble-btn {
     gap: 30px;
+
   }
 
   .services-users-section-img {
@@ -1825,6 +1830,21 @@ footer {
 
   .row {
     padding-bottom: 110px;
+    &:last-child {
+      padding-bottom: 0px !important;
+    }
+    @media (max-width: 992px) {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .services-users-dubble-btn {
+    gap: 20px;
+    a {
+      padding: 8px 14px !important;
+    }
   }
 }
 
@@ -1925,7 +1945,14 @@ footer {
 
 
 /*--- Offcanvas Mobile menu ----*/
+body {
+  padding-right: 0 !important;
+  overflow-y: scroll !important; 
+}
 
+.offcanvas {
+  width: 100% !important;
+}
 .offcanvas-wrap {
   .offcanvas-body {
     padding: 16px;
@@ -1954,8 +1981,22 @@ footer {
 }
 
 .offcanvas-service-item {
-  gap: 15px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  // @media(max-width: 992px) {
+  //   grid-template-columns: 1fr 1fr;
+  // }
+
+  @media(max-width: 622px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
 }
+
 
 @media (max-width: 1200px) {
   .header-topbar {
@@ -1970,11 +2011,20 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   header {
     padding-block: 10px !important;
     .navbar {
       padding: 0px !important;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .offcanvas-login-book {
+    .common-btn {
+      padding: 10px 15px !important;
+      font-size: 14px !important;
     }
   }
 }
