@@ -124,4 +124,36 @@ const swiper2 = new Swiper(".newsupdate-slider", {
   },
 });
 
+const swiper3 = new Swiper(".benefits-slider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-unique",
+    prevEl: ".swiper-button-prev-unique",
+  },
+
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    550: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
 // Swipper js end
