@@ -73,7 +73,7 @@ const swiper = new Swiper(".testi-slider", {
   },
 
   breakpoints: {
-    350: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 30,
     },
