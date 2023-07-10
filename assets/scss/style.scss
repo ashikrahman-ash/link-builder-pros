@@ -314,6 +314,7 @@ header {
     font-size: 24px !important;
     line-height: 34px !important;
   }
+
   @media (max-width: 575px) {
     font-size: 20px !important;
     line-height: 30px !important;
@@ -396,9 +397,14 @@ header {
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @media (max-width: 575px) {
+  @media (max-width: 992px) {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  @media (max-width: 575px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &.sp-footer {
@@ -440,6 +446,7 @@ header {
 
   }
 }
+
 @media (max-width: 1200px) {
   .common-btn {
     &.pricing-btn {
@@ -496,6 +503,7 @@ header {
 .custom-dropdown {
   position: static;
 }
+
 .custom-dropdown-menu {
   position: absolute;
   max-width: 948px;
@@ -537,6 +545,7 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
 .custom-dorpdown-item {
   padding: 12px;
   border-radius: 12px;
@@ -566,10 +575,12 @@ header {
 #hero {
   padding-top: 200px;
   padding-bottom: 220px;
+
   @media (max-width: 992px) {
     padding-top: 150px;
     padding-bottom: 80px;
   }
+
   @media (max-width: 576px) {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -600,6 +611,54 @@ header {
 
 // benefits section
 #benefits {
+  @media(max-width: 768px) {
+    .bo-features {
+      div {
+        &:last-child {
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+
+  // @media(max-width: 768px) {
+  //   .golden-elements-card-wrapper {
+  //     div {
+  //       &:last-child {
+  //         margin-bottom: 0px !important;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // @media (max-width: 992px) {
+  //   .golden-elements-card-wrapper {
+  //     div {
+  //       &:nth-last-child(1) {
+  //         margin-bottom: 0px !important;
+  //       }
+  //       &:nth-last-child(2) {
+  //         margin-bottom: 0px !important;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // @media (max-width: 576px) {
+  //   .golden-elements-card-wrapper {
+  //     div {
+  //       &:nth-last-child(1) {
+  //         margin-bottom: 0px !important;
+  //       }
+  //       &:nth-last-child(2) {
+  //         margin-bottom: 24px !important;
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
   .benefites-card {
     background-color: white;
     padding: 30px;
@@ -678,8 +737,6 @@ header {
     box-shadow: 0px 15px 40px rgba(30, 33, 45, 0.05);
     border-radius: 12px;
   }
-
-
 
 
 }
@@ -788,13 +845,12 @@ header {
         max-width: 100%;
         width: auto;
         float: none;
-        margin-left: 110px;
+        margin-left: 90px;
         min-height: 53px;
       }
 
       .content-left,
       .content-right {
-        padding: 10px 25px;
         min-height: 65px;
       }
     }
@@ -809,6 +865,39 @@ header {
 
 //pricing section
 #pricing {
+
+
+  @media (max-width: 992px) {
+    .row {
+      div {
+        &:nth-last-child(1) {
+          padding-bottom: 0px !important;
+          margin-bottom: 0px !important;
+        }
+        &:nth-last-child(2) {
+          padding-bottom: 0px !important;
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .row {
+      div {
+        &:nth-last-child(2) {
+          padding-bottom: 20px !important;
+          margin-bottom: 4px !important;
+        }
+        &:nth-last-child(1) {
+          padding-bottom: 0px !important;
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+  
+
   .pricing-card {
     background-color: white;
     box-shadow: 0px 15px 40px rgba(30, 33, 45, 0.05);
@@ -971,7 +1060,7 @@ header {
     }
   }
 
-  .swiper-button-prev-unique {
+  .swiper-button-prev-unique-left {
     top: -330px;
     left: -90px;
 
@@ -979,9 +1068,17 @@ header {
       left: 15px;
       z-index: 999;
     }
+
+    @media(max-width: 768px) {
+      top: 0;
+      bottom: 0;
+      left: 40%;
+      transform: translateX(-50%);
+    }
+
   }
 
-  .swiper-button-next-unique {
+  .swiper-button-next-unique-right {
     top: -330px;
     right: -90px;
 
@@ -989,10 +1086,17 @@ header {
       right: 12px;
       z-index: 999;
     }
+
+    @media(max-width: 768px) {
+      top: 0;
+      bottom: 0;
+      left: 60%;
+      transform: translateX(-50%);
+    }
   }
 
-  .swiper-button-prev-unique,
-  .swiper-button-next-unique {
+  .swiper-button-prev-unique-left,
+  .swiper-button-next-unique-right {
     width: 52px;
     height: 52px;
     border: 1px solid var(--dark4);
@@ -1008,7 +1112,7 @@ header {
     }
 
     @media(max-width: 550px) {
-      display: none !important;
+      bottom: 0;
     }
   }
 
@@ -1025,7 +1129,6 @@ header {
     }
 
     .newsupdate-card-content {
-      padding: 14px;
 
       .readmore {
         a {
@@ -1105,6 +1208,7 @@ header {
     box-shadow: 0px 15px 40px rgba(30, 33, 45, 0.05);
     border-radius: 16px;
     padding: 40px;
+
     @media (max-width: 576px) {
       padding: 20px;
     }
@@ -1507,7 +1611,12 @@ footer {
 #breadcrumb {
   padding-top: 125px;
   border-bottom: 2px solid rgba(255, 115, 0, 0.12);
-  ;
+
+  .breadcrumb-item+.breadcrumb-item {
+    &::before {
+      margin-top: 4px;
+    }
+  }
 }
 
 //blog details description
@@ -1698,8 +1807,15 @@ footer {
 
 /* Blog details /-end*/
 
+/* case studies */
 #casestudiestable {
   .trafic-table {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 15px 100px 0px rgba(30, 33, 45, 0.10);
+
     .page-item:first-child .page-link {
       border-radius: 8px;
     }
@@ -1780,6 +1896,36 @@ footer {
 
 /* case stadies /-end */
 
+/* case stadies /-end */
+
+/* case studeis details */
+
+#single-case-studies {
+  .left-case-studies {
+    border-radius: 16px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 15px 40px 0px rgba(30, 33, 45, 0.05);
+    padding: 30px;
+
+    .domain-rating {
+      .ranking {
+        border-radius: 4px;
+        background: #94F9DC;
+        padding: 5px 10px;
+      }
+
+      &.bdr-bottom {
+        background-image: url(../img/bdr-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+/* case studeids details end */
+
 
 
 
@@ -1804,6 +1950,10 @@ footer {
       height: 30px;
     }
 
+    @media(max-width: 992px) {
+      display: none;
+    }
+
   }
 
   &::after {
@@ -1820,6 +1970,10 @@ footer {
     @media(max-width:1200px) {
       width: 30px;
       height: 30px;
+    }
+
+    @media(max-width: 992px) {
+      display: none;
     }
   }
 }
@@ -1846,15 +2000,26 @@ footer {
   .services-users-section-img {
     margin-left: -20px;
     margin-right: -20px;
+
+    @media (max-width: 768px) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
   }
 
   .row {
     padding-bottom: 110px;
+
     &:last-child {
       padding-bottom: 0px !important;
     }
+
     @media (max-width: 992px) {
       padding-bottom: 60px;
+    }
+
+    @media (max-width: 576px) {
+      padding-bottom: 40px;
     }
   }
 }
@@ -1862,8 +2027,20 @@ footer {
 @media (max-width: 992px) {
   .services-users-dubble-btn {
     gap: 20px;
+
+    a {
+      padding: 8px 12px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .services-users-dubble-btn {
+    gap: 12px !important;
+
     a {
       padding: 8px 14px !important;
+      font-size: 15px !important;
     }
   }
 }
@@ -1899,6 +2076,16 @@ footer {
     width: 105px !important;
     height: 105px !important;
     background-size: cover;
+
+    @media(max-width:1200px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media(max-width: 992px) {
+      display: none;
+    }
+
   }
 
   .golden-elements-card {
@@ -1953,8 +2140,12 @@ footer {
       left: calc(50% - 1px) !important;
       width: 1px;
       top: 10px;
-      height: 180%;
+      height: 140%;
       background-repeat: repeat;
+    }
+
+    @media(max-width: 576px) {
+      height: 130%;
     }
 
   }
@@ -1967,23 +2158,26 @@ footer {
 /*--- Offcanvas Mobile menu ----*/
 body {
   padding-right: 0 !important;
-  overflow-y: scroll !important; 
+  overflow-y: scroll !important;
 }
 
 .offcanvas {
   width: 100% !important;
 }
+
 .offcanvas-wrap {
   .offcanvas-body {
     padding: 16px;
   }
+
   .offcanvas-header {
     background: var(--white, #FFF);
     box-shadow: 0px 15px 40px 0px rgba(30, 33, 45, 0.05);
 
   }
-  
+
 }
+
 .offcanvas-mobile-men {
   ul {
     li {
@@ -1992,6 +2186,7 @@ body {
 
       a {
         transition: all 200ms linear;
+
         &:hover {
           color: var(--primary);
         }
@@ -2023,8 +2218,10 @@ body {
     background: var(--white, #FFF);
     box-shadow: 0px 15px 40px 0px rgba(30, 33, 45, 0.05);
   }
+
   header {
     padding-block: 16px !important;
+
     .navbar {
       padding: 0px !important;
     }
@@ -2034,6 +2231,7 @@ body {
 @media (max-width: 768px) {
   header {
     padding-block: 10px !important;
+
     .navbar {
       padding: 0px !important;
     }
@@ -2050,3 +2248,10 @@ body {
 }
 
 /*--- Offcanvas Mobile menu ----*/
+
+
+.niche-edits {
+  &.services-users {
+    background: none;
+  }
+}

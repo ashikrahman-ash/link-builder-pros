@@ -100,8 +100,8 @@ const swiper2 = new Swiper(".newsupdate-slider", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next-unique",
-    prevEl: ".swiper-button-prev-unique",
+    nextEl: ".swiper-button-next-unique-right",
+    prevEl: ".swiper-button-prev-unique-left",
   },
 
   breakpoints: {
