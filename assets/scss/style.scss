@@ -445,6 +445,14 @@ header {
     border: 1px solid #051F39;
 
   }
+
+  &.btn-case-res {
+    border: 1px solid #8997A6;
+
+    &:hover {
+      border: 1px solid var(--primary);
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -464,6 +472,12 @@ header {
 header {
   padding-top: 22px;
   padding-bottom: 22px;
+
+  .navbar-nav .nav-link {
+    &.active {
+      color: var(--primary);
+    }
+  }
 
   @media(max-width:1200px) {
     #navbarSupportedContent {
@@ -677,6 +691,10 @@ header {
     @media (max-width: 550px) {
       height: 450px;
     }
+
+    @media(max-width: 320px) {
+      height: 400px;
+    }
   }
 
   .swiper-pagination {
@@ -871,11 +889,12 @@ header {
     .row {
       div {
         &:nth-last-child(1) {
-          padding-bottom: 0px !important;
+          // padding-bottom: 0px !important;
           margin-bottom: 0px !important;
         }
+
         &:nth-last-child(2) {
-          padding-bottom: 0px !important;
+          // padding-bottom: 0px !important;
           margin-bottom: 0px !important;
         }
       }
@@ -886,17 +905,18 @@ header {
     .row {
       div {
         &:nth-last-child(2) {
-          padding-bottom: 20px !important;
-          margin-bottom: 4px !important;
+          // padding-bottom: 20px !important;
+          margin-bottom: 16px !important;
         }
+
         &:nth-last-child(1) {
-          padding-bottom: 0px !important;
+          // padding-bottom: 0px !important;
           margin-bottom: 0px !important;
         }
       }
     }
   }
-  
+
 
   .pricing-card {
     background-color: white;
@@ -1892,14 +1912,65 @@ footer {
 
     }
   }
+
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+#casestudiestable-responsive {
+
+  .ranking {
+    .trafic-icon {
+      span {
+        border-radius: 4px;
+        padding: 6px;
+        background: #94F9DC;
+      }
+    }
+  }
+
+  .client-white-shadow {
+    border-radius: 12px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 15px 100px 0px rgba(30, 33, 45, 0.10);
+  }
+
+  .client-gray-shadow {
+    border-radius: 12px;
+    background: var(--dark-dark-7, #F2F5F6);
+  }
+
+  .page-item:first-child .page-link {
+    border-radius: 8px;
+  }
+
+  .page-item:last-child .page-link {
+    border-radius: 8px;
+  }
+
+  .pagination {
+    .page-link {
+      color: var(--dark2);
+      border-radius: 8px;
+      border: 1px solid #D8DEE5 !important;
+
+      &:hover {
+        color: white;
+        border: 1px solid var(--primary) !important;
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  @media(max-width: 550px) {
+    display: block;
+  }
 }
 
 /* case stadies /-end */
 
-/* case stadies /-end */
-
 /* case studeis details */
-
 #single-case-studies {
   .left-case-studies {
     border-radius: 16px;
@@ -1926,11 +1997,7 @@ footer {
 
 /* case studeids details end */
 
-
-
-
-
-/*-- Guest post page -/Start -- */
+/* Guest post page */
 .golden-elements-section {
   position: relative;
 
@@ -1984,8 +2051,9 @@ footer {
   padding: 30px;
 }
 
+/* Guest post page /-end */
 
-// Start services users section.
+/*start services users section.*/
 .services-users {
   background: url('../img/posting-service-section-bg.svg');
   background-repeat: no-repeat;

@@ -105,7 +105,7 @@ const swiper2 = new Swiper(".newsupdate-slider", {
   },
 
   breakpoints: {
-    350: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 30,
     },
@@ -137,7 +137,7 @@ const swiper3 = new Swiper(".benefits-slider", {
   },
 
   breakpoints: {
-    350: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 30,
     },
@@ -155,5 +155,4 @@ const swiper3 = new Swiper(".benefits-slider", {
     },
   },
 });
-
 // Swipper js end
