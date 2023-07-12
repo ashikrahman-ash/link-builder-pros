@@ -17,6 +17,19 @@ $(window).on("load", function () {
  * ========================================================
  */
 
+  // passwords show hide JS
+  const togglePasswordVisibility = (id, inputId) => {
+    const passwordInput = document.getElementById(inputId);
+    const togglePasswordVisibility = document.getElementById(id);
+    passwordInput.type === "password"
+        ? (passwordInput.type = "text", togglePasswordVisibility.innerHTML = '<span class="pass-show-hide-icon text_dark_2 fs-6 ni ni-eye position-absolute"></span>')
+        : (passwordInput.type = "password", togglePasswordVisibility.innerHTML = '<span class="pass-show-hide-icon text_dark_2 fs-6 pass-show ni ni-eye-off position-absolute"></span>');
+};
+// passwords show hide JS - END
+
+
+
+
 $(document).ready(function () {
   /* code execute from here */
   // custom accordion
